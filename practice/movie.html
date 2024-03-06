@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <link rel="stylesheet" href="/wibesite/practice/movie.css">
+    <link rel="stylesheet" href="/wibesite/practice/all.min.css">
+</head>
+
+<body>
+    <button class="toUP"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- header -->
+    <header>
+        <div class="left">
+            <a id="logo" href="#">
+                <div class="logo">seri<span>Flix</span></div>
+            </a>
+
+            <div class="bars">
+                <i id="barsIcon" class="fa-solid fa-bars">
+                </i>
+                <ul id="sections" >
+                    <li><a onclick="scl1()">home</a></li>
+                    <li><a onclick="scl2()">movies</a></li>
+                    <li><a onclick="scl3()">category</a></li>
+                    <li><a onclick="scl4()">LIVE</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right">
+            <div id="searchdiv">
+                <input class="inp" type="search" placeholder="i'm looking for...">
+            </div>
+            <i id="search" class="fa-solid fa-magnifying-glass"></i>
+            <div class="enter">
+                <a href="#">
+                    <p>sign in<i class="fa-solid fa-arrow-right-to-bracket"></i></p>
+            </div>  
+            </a>
+        </div>
+    </header>
+    <div class="mo7tawa">
+        <!-- image content -->
+        <div class="content">
+            <div class="intro">
+                <img class="John-Wick-3" src="/wibesite/images/images/John-Wick-3.jpg" alt="">
+                <div class="disq">
+                    <i class="fa-solid fa-film"></i>
+                    <p>Action/Thriller</p>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>2019</p>
+                    <i class="fa-solid fa-clock"></i>
+                    <p>2h11m</p>
+                </div>
+                <h2>john wick: chapter 3-parabellum</h2>
+
+            </div>
+
+
+
+        </div>
+        <!-- part filter bar -->
+        <div class="filterBar">
+
+            <!-- part genres -->
+            <div class="genres">
+                <p id="btnGenres">All genres <i id="idicon1" class="fa-solid fa-chevron-down" class="classicon1"></i>
+                </p>
+                <div class="hiden">
+                    <div id="typeGenres1">
+                        <p class="p">- All genres</p>
+                        <p class="p">- Action</p>
+                        <p class="p">- Adventure</p>
+                        <p class="p">- Animal</p>
+                        <p class="p">- Animation</p>
+                        <p class="p">- Biography</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- part years -->
+            <div class="years">
+                <p id="btnYears">All the years <i id="idicon2" class="fa-solid fa-chevron-down" class="classicon2"></i>
+                </p>
+                <div class="hiden2">
+                    <div id="typeYears1">
+                        <p class="p2">- All the years</p>
+                        <p class="p2">- 2022</p>
+                        <p class="p2">- 2020-2021</p>
+                        <p class="p2">- 2010-2019</p>
+                        <p class="p2">- 2000-2009</p>
+                        <p class="p2">- 1980-1999</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- part category -->
+            <div class="category">
+                <p>featured</p>
+                <p>popular</p>
+                <p>newest</p>
+            </div>
+        </div>
+        <!-- aflam -->
+        
+        <div id="titreMovies" class="movies-grid">
+            <div class="movie-card">
+                <div class="card-head">
+                    <img class="card-img" src="C:\Users\assra\OneDrive\Desktop\learn\wibesite\images\images\img1.jpg" alt="">
+                    <div class="card-overlay">
+                        <div class="bookmark">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-regular fa-star" id="star"></i>
+                            <span>6.4</span>
+                        </div>
+                        <div class="play">
+                            <i id="play" class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Red Notice</h3>
+                    <div class="card-info">
+                        <span class="genre">Action/Comedy</span>
+                        <span class="yearMovie">2021</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="card-head">
+                    <img class="card-img" src="/wibesite/images/images/movies/img2.jpg" alt="">
+                    <div class="card-overlay">
+                        <div class="bookmark">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-regular fa-star" id="star"></i>
+                            <span>6.4</span>
+                        </div>
+                        <div class="play">
+                            <i id="play" class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Red Notice</h3>
+                    <div class="card-info">
+                        <span class="genre">Action/Comedy</span>
+                        <span class="yearMovie">2021</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="card-head">
+                    <img class="card-img" src="/wibesite/images/images/movies/img3.jpg" alt="">
+                    <div class="card-overlay">
+                        <div class="bookmark">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-regular fa-star" id="star"></i>
+                            <span>6.4</span>
+                        </div>
+                        <div class="play">
+                            <i id="play" class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Red Notice</h3>
+                    <div class="card-info">
+                        <span class="genre">Action/Comedy</span>
+                        <span class="yearMovie">2021</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="card-head">
+                    <img class="card-img" src="/wibesite/images/images/movies/img4.jpg" alt="">
+                    <div class="card-overlay">
+                        <div class="bookmark">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-regular fa-star" id="star"></i>
+                            <span>6.4</span>
+                        </div>
+                        <div class="play">
+                            <i id="play" class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Red Notice</h3>
+                    <div class="card-info">
+                        <span class="genre">Action/Comedy</span>
+                        <span class="yearMovie">2021</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="card-head">
+                    <img class="card-img" src="/wibesite/images/images/movies/img5.jpg" alt="">
+                    <div class="card-overlay">
+                        <div class="bookmark">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-regular fa-star" id="star"></i>
+                            <span>6.4</span>
+                        </div>
+                        <div class="play">
+                            <i id="play" class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Red Notice</h3>
+                    <div class="card-info">
+                        <span class="genre">Action/Comedy</span>
+                        <span class="yearMovie">2021</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="card-head">
+                    <img class="card-img" src="/wibesite/images/images/movies/img6.jpg" alt="">
+                    <div class="card-overlay">
+                        <div class="bookmark">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-regular fa-star" id="star"></i>
+                            <span>6.4</span>
+                        </div>
+                        <div class="play">
+                            <i id="play" class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Red Notice</h3>
+                    <div class="card-info">
+                        <span class="genre">Action/Comedy</span>
+                        <span class="yearMovie">2021</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="card-head">
+                    <img class="card-img" src="/wibesite/images/images/movies/img7.jpg" alt="">
+                    <div class="card-overlay">
+                        <div class="bookmark">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-regular fa-star" id="star"></i>
+                            <span>6.4</span>
+                        </div>
+                        <div class="play">
+                            <i id="play" class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Red Notice</h3>
+                    <div class="card-info">
+                        <span class="genre">Action/Comedy</span>
+                        <span class="yearMovie">2021</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="card-head">
+                    <img class="card-img" src="/wibesite/images/images/movies/img8.jpg" alt="">
+                    <div class="card-overlay">
+                        <div class="bookmark">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-regular fa-star" id="star"></i>
+                            <span>6.4</span>
+                        </div>
+                        <div class="play">
+                            <i id="play" class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Red Notice</h3>
+                    <div class="card-info">
+                        <span class="genre">Action/Comedy</span>
+                        <span class="yearMovie">2021</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="card-head">
+                    <img class="card-img" src="/wibesite/images/images/movies/img9.jpg" alt="">
+                    <div class="card-overlay">
+                        <div class="bookmark">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-regular fa-star" id="star"></i>
+                            <span>6.4</span>
+                        </div>
+                        <div class="play">
+                            <i id="play" class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Red Notice</h3>
+                    <div class="card-info">
+                        <span class="genre">Action/Comedy</span>
+                        <span class="yearMovie">2021</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="card-head">
+                    <img class="card-img" src="/wibesite/images/images/movies/img10.jpg" alt="">
+                    <div class="card-overlay">
+                        <div class="bookmark">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-regular fa-star" id="star"></i>
+                            <span>6.4</span>
+                        </div>
+                        <div class="play">
+                            <i id="play" class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Red Notice</h3>
+                    <div class="card-info">
+                        <span class="genre">Action/Comedy</span>
+                        <span class="yearMovie">2021</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="card-head">
+                    <img class="card-img" src="/wibesite/images/images/movies/img11.jpg" alt="">
+                    <div class="card-overlay">
+                        <div class="bookmark">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-regular fa-star" id="star"></i>
+                            <span>6.4</span>
+                        </div>
+                        <div class="play">
+                            <i id="play" class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Red Notice</h3>
+                    <div class="card-info">
+                        <span class="genre">Action/Comedy</span>
+                        <span class="yearMovie">2021</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="card-head">
+                    <img class="card-img" src="/wibesite/images/images/movies/img12.jpg" alt="">
+                    <div class="card-overlay">
+                        <div class="bookmark">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-regular fa-star" id="star"></i>
+                            <span>6.4</span>
+                        </div>
+                        <div class="play">
+                            <i id="play" class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Red Notice</h3>
+                    <div class="card-info">
+                        <span class="genre">Action/Comedy</span>
+                        <span class="yearMovie">2021</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="card-head">
+                    <img class="card-img" src="/wibesite/images/images/movies/img13.jpg" alt="">
+                    <div class="card-overlay">
+                        <div class="bookmark">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-regular fa-star" id="star"></i>
+                            <span>6.4</span>
+                        </div>
+                        <div class="play">
+                            <i id="play" class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Red Notice</h3>
+                    <div class="card-info">
+                        <span class="genre">Action/Comedy</span>
+                        <span class="yearMovie">2021</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="card-head">
+                    <img class="card-img" src="/wibesite/images/images/movies/img14.jpg" alt="">
+                    <div class="card-overlay">
+                        <div class="bookmark">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-regular fa-star" id="star"></i>
+                            <span>6.4</span>
+                        </div>
+                        <div class="play">
+                            <i id="play" class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Red Notice</h3>
+                    <div class="card-info">
+                        <span class="genre">Action/Comedy</span>
+                        <span class="yearMovie">2021</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="card-head">
+                    <img class="card-img" src="/wibesite/images/images/movies/img15.jpg" alt="">
+                    <div class="card-overlay">
+                        <div class="bookmark">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-regular fa-star" id="star"></i>
+                            <span>6.4</span>
+                        </div>
+                        <div class="play">
+                            <i id="play" class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Red Notice</h3>
+                    <div class="card-info">
+                        <span class="genre">Action/Comedy</span>
+                        <span class="yearMovie">2021</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="card-head">
+                    <img class="card-img" src="/wibesite/images/images/movies/img16.jpg" alt="">
+                    <div class="card-overlay">
+                        <div class="bookmark">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-regular fa-star" id="star"></i>
+                            <span>6.4</span>
+                        </div>
+                        <div class="play">
+                            <i id="play" class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Red Notice</h3>
+                    <div class="card-info">
+                        <span class="genre">Action/Comedy</span>
+                        <span class="yearMovie">2021</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="card-head">
+                    <img class="card-img" src="/wibesite/images/images/movies/img17.jpg" alt="">
+                    <div class="card-overlay">
+                        <div class="bookmark">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-regular fa-star" id="star"></i>
+                            <span>6.4</span>
+                        </div>
+                        <div class="play">
+                            <i id="play" class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Red Notice</h3>
+                    <div class="card-info">
+                        <span class="genre">Action/Comedy</span>
+                        <span class="yearMovie">2021</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="card-head">
+                    <img class="card-img" src="/wibesite/images/images/movies/img18.jpg" alt="">
+                    <div class="card-overlay">
+                        <div class="bookmark">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-regular fa-star" id="star"></i>
+                            <span>6.4</span>
+                        </div>
+                        <div class="play">
+                            <i id="play" class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Red Notice</h3>
+                    <div class="card-info">
+                        <span class="genre">Action/Comedy</span>
+                        <span class="yearMovie">2021</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="more-movies">
+            <button id="btn-more">Load More</button>
+        </div>
+        <!-- category -->
+        <h2 class="titreCategory">Category</h2>
+        <div class="movies-grid2">
+            <div class="movies-card">
+                <img src="/wibesite/images/images/img1.jpg">
+                <div class="genre">
+                    <p>Action</p>
+                </div>
+                <div class="quantity">100</div>
+            </div>
+            <div class="movies-card">
+                <img src="/wibesite/images/images/img2.jpg">
+                <div class="genre">
+                    <p>Action</p>
+                </div>
+                <div class="quantity">100</div>
+            </div>
+            <div class="movies-card">
+                <img src="/wibesite/images/images/img3.jpg">
+                <div class="genre">
+                    <p>Action</p>
+                </div>
+                <div class="quantity">100</div>
+            </div>
+            <div class="movies-card">
+                <img src="/wibesite/images/images/img4.jpg">
+                <div class="genre">
+                    <p>Action</p>
+                </div>
+                <div class="quantity">100</div>
+            </div>
+            <div class="movies-card">
+                <img src="/wibesite/images/images/img5.jpeg">
+                <div class="genre">
+                    <p>Action</p>
+                </div>
+                <div class="quantity">100</div>
+            </div>
+            <div class="movies-card">
+                <img src="/wibesite/images/images/img6.jpg">
+                <div class="genre">
+                    <p>Action</p>
+                </div>
+                <div class="quantity">100</div>
+            </div>
+            <div class="movies-card">
+                <img src="/wibesite/images/images/img7.jpg">
+                <div class="genre">
+                    <p>Action</p>
+                </div>
+                <div class="quantity">100</div>
+            </div>
+            <div class="movies-card">
+                <img src="/wibesite/images/images/img8.jpg">
+                <div class="genre">
+                    <p>Action</p>
+                </div>
+                <div class="quantity">100</div>
+            </div>
+        </div>
+        <!-- live -->
+        <div class="live">
+            <h2 class="titreLive">Live Tv Shows</h2>
+            <div class="movies-live">
+                <!-- card 1 -->
+                <div class="card-live">
+                    <div class="head-card">
+                        <div class="live-img">
+                            <img src="/wibesite/images/images/vikins.jpg" alt="">
+                        </div>
+                        <p>Live</p>
+                        <div class="section-viewers"><span>1.9M </span>Viewers</div>
+                    </div>
+
+                    <div class="body-card">
+                        <img src="/wibesite/images/images/HBO-Logo-square.jpg" alt="">
+                        <p>vikings season 4-what might have been</p>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card-live">
+                    <div class="head-card">
+                        <div class="live-img">
+                            <img src="/wibesite/images/images/img00.jpg" alt="">
+                        </div>
+                        <p>Live</p>
+                        <div class="section-viewers"><span>1.2M </span>Viewers</div>
+                    </div>
+
+                    <div class="body-card">
+                        <img src="/wibesite/images/images/HBO-Logo-square.jpg" alt="">
+                        <p>game of thrones season 5-mother's mercy</p>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card-live">
+                    <div class="head-card">
+                        <div class="live-img">
+                            <img src="/wibesite/images/images/planet.jpg" alt="">
+                        </div>
+                        <p>Live</p>
+                        <div class="section-viewers"><span>487K </span>Viewers</div>
+                    </div>
+
+                    <div class="body-card">
+                        <img src="/wibesite/images/images/HBO-Logo-square.jpg" alt="">
+                        <p>planet earth 2 season 1-islands</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="about">
+                <div class="logo2">seri<span>Flix</span></div>
+                <p>movies & TV showa, online cinema,<br>
+                    movie database HTML <br> template.
+                </p>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+
+            <div class="cine-flix">
+                <h4>SeriFlix</h4>
+                <ul>
+                    <li>about us</li>
+                    <li>my profile</li>
+                    <li>pricing plans</li>
+                    <li>contacts</li>
+                </ul>
+            </div>
+
+            <div class="browse">
+                <h4>Browse</h4>
+                <ul>
+                    <li>live tv</li>
+                    <li>live news</li>
+                    <li>live sport</li>
+                    <li>streaming library</li>
+                </ul>
+            </div>
+
+            <div class="browse2">
+                <ul>
+                    <li>tv Shows</li>
+                    <li>movies</li>
+                    <li>kids</li>
+                    <li>collections</li>
+                </ul>
+            </div>
+            <div class="help">
+                <h4>help</h4>
+                <ul>
+                    <li>account & Biling</li>
+                    <li>plans & pricing</li>
+                    <li>suprted devices</li>
+                    <li>Accessibility</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="/wibesite/practice/movie.js"></script>
+</body>
+
+</html>
